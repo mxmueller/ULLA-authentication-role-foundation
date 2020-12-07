@@ -1,0 +1,5 @@
+{
+    "require": {
+        "santigarcor/laratrust": "^6.3"
+    }
+}
