@@ -1,2 +1,2 @@
 
-![alt text](https://github.com/[mxmueller]/[ulla-base]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/mxmueller/ulla-foundation/blob/main/docs/database/db-schema/ulla-db-schema-mark3.png)
