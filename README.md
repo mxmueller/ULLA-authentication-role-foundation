@@ -1,4 +1,8 @@
-# Authentication Base
+### Authentication Base
+
+# Urlaubsplanungs & Antragsmanagement Interface als Laravel 8 Webapplikation.
+## (kurz. ULLA)
+
 
 # Techstack
 
