@@ -21,4 +21,8 @@
 Alle User Permissions und Zugriffsoperatoren werden über das Laravel Package "Laratrust" gelöst.
 [Dokumentation Laratrust](https://laratrust.santigarcor.me/docs/6.x/)
 
+---
 
+![alt text](https://github.com/mxmueller/ulla-foundation/blob/main/docs/database/example_data_sets/request.jpg)
+![alt text](https://github.com/mxmueller/ulla-foundation/blob/main/docs/database/example_data_sets/rejected.jpg)
+![alt text](https://github.com/mxmueller/ulla-foundation/blob/main/docs/database/example_data_sets/granted.jpg)
