@@ -1,7 +1,8 @@
 # Urlaubsplanungs & Antragsmanagement Interface als Laravel 8 Webapplikation (kurz. ULLA)
 
 <img align="left" width="300" src="https://github.com/mxmueller/ulla-foundation/blob/main/app/public/brand/logo_large.png">
-
+ <br>
+  <br>
 # Techstack
 
 <img align="left" height="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png">
