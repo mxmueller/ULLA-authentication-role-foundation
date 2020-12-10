@@ -15,6 +15,11 @@
                         {{ session('status') }}
                     </div>
                     @endif
+
+                    @foreach($users as $user)
+                    <form id="role_changeID_{{$user->id}}" method="post" action="{{ url('change_user_role') }}">@csrf</form>
+                    @endforeach
+
                     <table class="table table-hover table-striped">
                         <thead>
                             <th>ID</th>
@@ -28,19 +33,19 @@
                         <tbody>
                             @foreach($users as $user)
                             <tr>
-                                <td>{{$user->id}} </td>
+                                <td>{{$user->id}} <input form="role_changeID_{{$user->id}}" type="hidden" name="user_id" value="{{$user->id}}" /></td>
                                 <td>{{$user->name}} </td>
                                 <td>{{$user->email}} </td>
                                 <td>{{$user->roles[0]->name}} </td>
                                 <td>
-                                    <select class="form-control" name="dropdown">
+                                    <select form="role_changeID_{{$user->id}}" id="new_user_role" class="form-control" name="new_user_role">
                                         @foreach($roles as $role)
                                         <option value="{{ $role->id }}">{{ $role->name }}</option>
                                         @endforeach
                                     </select>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-success">
+                                    <button form="role_changeID_{{$user->id}}" type="submit" class="btn btn-success">
                                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check"
                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd"
@@ -56,6 +61,9 @@
                                         </svg>
                                     </button>
                                 </td>
+
+
+
                             </tr>
                             @endforeach
                         </tbody>
@@ -84,7 +92,7 @@
                             <tr>
                                 <td>{{$role->name}} </td>
                                 <td>{{$role->description}} </td>
-                            @endforeach
+                                @endforeach
                         </tbody>
                     </table>
 

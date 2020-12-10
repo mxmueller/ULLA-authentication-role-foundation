@@ -24,12 +24,16 @@ Route::get('/admin', [App\Http\Controllers\UserController\AdminController::class
 Route::get('/executive', [App\Http\Controllers\UserController\ExecutiveController::class, 'index'])->name('executive');
 Route::get('/accounting', [App\Http\Controllers\UserController\AccountingController::class, 'index'])->name('accounting');
 
+// ----------
+// Post Data
+Route::post('/change_user_role', [App\Http\Controllers\UserActions\updateUserRole::class, 'index']);
+
+
 // ----------------------------------------------------------------
 // Application Views
 Route::get('/permission', [App\Http\Controllers\Tasks\PermissionController::class, 'index'])->name('permission');
 
-
-
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
