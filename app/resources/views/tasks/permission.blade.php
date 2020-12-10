@@ -6,7 +6,7 @@
         <div class="w-100 p-3">
 
 
-            <div class="card">
+            <div class="card shadow">
                 <div class="card-header">{{ __('Benutzer Manager') }}</div>
 
                 <div class="card-body">
@@ -15,7 +15,7 @@
                         {{ session('status') }}
                     </div>
                     @endif
-                    <table class="table table-hover">
+                    <table class="table table-hover table-striped">
                         <thead>
                             <th>ID</th>
                             <th>Name</th>
@@ -40,8 +40,7 @@
                                     </select>
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-outline-success">
-                                        Rolle anpassen
+                                    <button type="button" class="btn btn-success">
                                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check"
                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd"
@@ -49,8 +48,7 @@
                                         </svg>
                                     </button>
 
-                                    <button type="button" class="btn btn-outline-danger ml-3">
-                                        User löschen
+                                    <button type="button" class="btn btn-danger">
                                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bucket"
                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd"
@@ -66,7 +64,7 @@
                 </div>
             </div>
 
-            <div class="card mt-5">
+            <div class="card shadow mt-5">
                 <div class="card-header">{{ __('Verfügbare Rollen') }}</div>
 
                 <div class="card-body">
@@ -75,7 +73,7 @@
                         {{ session('status') }}
                     </div>
                     @endif
-                    <table class="table table-hover">
+                    <table class="table table-hover table-striped">
                         <thead>
                             <th>Rolle</th>
                             <th>Definition</th>
