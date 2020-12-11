@@ -1,4 +1,4 @@
-# Urlaubsplanungs & Antragsmanagement Interface als Laravel 8 Webapplikation (kurz. ULLA)
+# Urlaubsverwaltungs- & Antragsstellungsapplikation (kurz. ULLA)
 
 <img  width="300" src="https://github.com/mxmueller/ulla-foundation/blob/main/app/public/brand/logo_large.png">
 
