@@ -19,14 +19,17 @@ Route::get('/', function () {
 
 // ----------------------------------------------------------------
 // User Roles
-Route::get('/staff', [App\Http\Controllers\UserController\StaffController::class, 'index'])->name('staff');
-Route::get('/admin', [App\Http\Controllers\UserController\AdminController::class, 'index'])->name('admin');
-Route::get('/executive', [App\Http\Controllers\UserController\ExecutiveController::class, 'index'])->name('executive');
-Route::get('/accounting', [App\Http\Controllers\UserController\AccountingController::class, 'index'])->name('accounting');
+Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// ----------
-// Post Data
+// Route::get('/staff', [App\Http\Controllers\UserController\StaffController::class, 'index'])->name('staff');
+// Route::get('/admin', [App\Http\Controllers\UserController\AdminController::class, 'index'])->name('admin');
+// Route::get('/executive', [App\Http\Controllers\UserController\ExecutiveController::class, 'index'])->name('executive');
+// Route::get('/accounting', [App\Http\Controllers\UserController\AccountingController::class, 'index'])->name('accounting');
+
+// ----------------------------------------------------------------
+// Post Requests
 Route::post('/change_user_role', [App\Http\Controllers\UserActions\updateUserRole::class, 'index']);
+Route::post('/delete_user', [App\Http\Controllers\UserActions\deleteUser::class, 'index']);
 
 
 // ----------------------------------------------------------------
@@ -35,5 +38,5 @@ Route::get('/permission', [App\Http\Controllers\Tasks\PermissionController::clas
 
 Auth::routes();
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 

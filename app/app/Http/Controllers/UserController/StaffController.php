@@ -14,6 +14,6 @@ class StaffController extends Controller
 
     public function index()
     {
-        return view('users.staff.dashboard');
+        return view('dashboard');
     }
 }

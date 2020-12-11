@@ -14,6 +14,6 @@ class AccountingController extends Controller
 
     public function index()
     {
-        return view('users.accounting.dashboard');
+        return view('dashboard');
     }
 }

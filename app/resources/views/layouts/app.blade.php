@@ -22,7 +22,8 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
-    <link href="//db.onlinewebfonts.com/c/57acd77a5a43cb11d805162d859eac55?family=Shentox" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/57acd77a5a43cb11d805162d859eac55?family=Shentox" rel="stylesheet"
+        type="text/css" />
 
     <!-- Styles -->
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
@@ -31,10 +32,10 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{ asset('brand/ulla-logo.svg') }}" width="110" alt="brand">
+                <a class="navbar-brand" href="{{ url('/dashboard') }}">
+                    <img src="{{ asset('brand/logo_large.png') }}" width="130" alt="brand">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -45,6 +46,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+
+                        @if(Auth::user()->hasRole('admin'))
+                        <li class="nav-item">
+                            <a class="nav-link" href="/permission">Benutzer Manager</a>
+                        </li>
+                        @endif
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/permission">Antrag</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/permission">Verzeichnis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/permission">Zuweisungen</a>
+                        </li>
 
                     </ul>
 
