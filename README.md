@@ -1,6 +1,8 @@
-# Urlaubsverwaltungs- & Antragsstellungsapplikation (kurz. ULLA)
-
 <img  width="300" src="https://github.com/mxmueller/ulla-foundation/blob/main/app/public/brand/logo_large.png">
+
+### Urlaubsverwaltungs- & Antragsstellungsapplikation (kurz. ULLA)
+
+
 
 ---
 
